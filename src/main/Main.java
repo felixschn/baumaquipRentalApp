@@ -25,11 +25,11 @@ public class Main extends Application {
 
     public void mainPage(){
         try{
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource("main_page.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainPageController.class.getResource("main_page.fxml"));
         VBox box = loader.load();
 
         MainPageController mainPageController = loader.getController();
-        mainPageController.setMain(this);
+        //mainPageController.setMain(this);
         Scene scene = new Scene(box);
         stage.setScene(scene);
         stage.show();
